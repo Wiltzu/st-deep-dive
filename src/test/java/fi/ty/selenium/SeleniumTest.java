@@ -24,7 +24,7 @@ public class SeleniumTest {
     @Test
     public void testApp() {
     	System.out.println("opening google...");
-    	driver.get("www.google.fi");
+    	driver.get("http://www.google.fi");
         assertTrue( true );
     }
     
