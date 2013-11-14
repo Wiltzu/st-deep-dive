@@ -56,10 +56,20 @@ public class SeleniumTest {
             }
         });
 
+
         assertEquals(baseUrl + "studying/Pages/home.aspx",
                 driver.getCurrentUrl());
     }
 
+    @Test
+    public void testSearch() {
+        WebElement textField = driver.findElement(By.id("ctl00_PlaceHolderSearchArea_mossSearch_S2768ABB1_InputKeywords"));
+        textField.click();
+        textField.sendKeys("Studying");
+        textField.submit();
+
+    }
+    
     @After
     public void tearDown() {
         System.out.println("Closing driver...");
