@@ -1,6 +1,8 @@
 Feature: Frontpage
+
 Background:
-Given we have page
+Given the front page
+
 Scenario: Logo on top left of the page
 Given we have logo
 And we have page
