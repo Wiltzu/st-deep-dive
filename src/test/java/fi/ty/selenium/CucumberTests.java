@@ -6,7 +6,7 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 //@CucumberOptions(format = "pretty")
-public class CucumberStoriesRunner {
+public class CucumberTests {
 
 
 }
